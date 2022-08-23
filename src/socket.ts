@@ -2,6 +2,7 @@ import { nanoid } from "nanoid";
 import { Server, Socket } from "socket.io";
 import logger from "./utils/logger";
 
+
 const EVENTS = {
   connection: "connection",
   CLIENT: {
@@ -23,6 +24,7 @@ const rooms: Record<string, { name: string }> = {
 rooms[roomId] = {
     name: 'mix-spaces-chat',
   };
+
 
 
 
